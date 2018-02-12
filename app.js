@@ -7,7 +7,7 @@ function firstNameLastName(firstName, lastName) {
 function lastNameFirstName(firstName, lastName) {
     return lastName + ", " + firstName
 }
-firstName.length
+console.log(firstName.length)
 
 var people = ['Jack', 'John', 'James']
 console.log(people);
