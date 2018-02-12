@@ -23,4 +23,12 @@ function withoutFirstJ(firstName) {
         return firstName;
     }
 }
-
+function withoutFirstR(firstName){
+    if(firstName.startsWith("J")) {
+        return firstName.substring(1);
+    } else if (firstName.startsWith("R")) {
+        return firstName.slice(0, -2);
+    } else {
+        return firstName 
+    }
+}
