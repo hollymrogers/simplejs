@@ -10,7 +10,7 @@ function lastNameFirstName(firstName, lastName) {
 console.log(firstName.length)
 
 var people = ['Jack', 'John', 'James']
-console.log(people);
+console.log(people.join("\r\n"))
 
 function withoutFirst(firstName){
 return firstName.substring(1);
