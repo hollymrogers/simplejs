@@ -15,3 +15,12 @@ console.log(people);
 function withoutFirst(firstName){
 return firstName.substring(1);
 }
+
+function withoutFirstJ(firstName) {
+    if(firstName.startsWith("J")) {
+        return firstName.substring(1);
+    } else {
+        return firstName;
+    }
+}
+
