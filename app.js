@@ -6,3 +6,6 @@ function firstNameLastName(firstName, lastName) {
     return firstName + " " + lastName
 }
 
+function lastNameFirstName(firstName, lastName) {
+    return lastName + ", " + firstName
+}
