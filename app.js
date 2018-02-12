@@ -9,4 +9,6 @@ function lastNameFirstName(firstName, lastName) {
 }
 firstName.length
 
+var people = ['Jack', 'John', 'James']
+console.log(people);
 
