@@ -12,3 +12,6 @@ firstName.length
 var people = ['Jack', 'John', 'James']
 console.log(people);
 
+function withoutFirst(firstName){
+return firstName.substring(1);
+}
