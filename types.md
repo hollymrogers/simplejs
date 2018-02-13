@@ -3,7 +3,7 @@
 [1,2,3] - array. 
 [{hello: 1}, {hello: 1}] - array of objects. 
 {cats: [{name: 'tiddles', breed: 'persian'}, {name: 'happy', breed: 'burmese'}], 
-  dogs: [{name: 'Chester', breed: 'labrador'}, {name: 'happy', breed: 'corgi'}]} - Object with array of strings. 
+  dogs: [{name: 'Chester', breed: 'labrador'}, {name: 'happy', breed: 'corgi'}]} - Object with array of object/strings. 
 
 What types does _.map accept as parameters? - function. 
 What does .map return in each case? - array.  
