@@ -1,7 +1,7 @@
 "Hello" - string. 
 {hello: 1} - Object with integer. 
-[1,2,3] - array. 
-[{hello: 1}, {hello: 1}] - array of objects. 
+[1,2,3] - array with integer. 
+[{hello: 1}, {hello: 1}] - array of objects with integer. 
 {cats: [{name: 'tiddles', breed: 'persian'}, {name: 'happy', breed: 'burmese'}], 
   dogs: [{name: 'Chester', breed: 'labrador'}, {name: 'happy', breed: 'corgi'}]} - Object with array of object/strings. 
 
