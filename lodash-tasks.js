@@ -28,3 +28,6 @@ gillUnderFiftySize = _.size(gillFamily);
 var sortGillAge
 sortGillAge = _.sortBy(gillFamily, ['age'])
 
+//14
+var youngestGill
+youngestGill = _.minBy(gillFamily, 'age')
