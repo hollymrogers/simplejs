@@ -6,7 +6,6 @@ _.map(gillFamily, 'name')
 _.sumBy(gillFamily, 'age')
 
 //4
-'robin', age: 60}]
 _.meanBy(gillFamily, 'age')
 
 //5
