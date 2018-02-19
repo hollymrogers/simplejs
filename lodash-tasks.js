@@ -33,6 +33,17 @@ var gillUnderFiftySize
 _.remove(gillFamily, function(o) { return o.age >50;})
 gillUnderFiftySize = _.size(gillFamily);
 
+//8
+_.remove (gillFamily, function (o) {
+return o.age>50; })
+var gillName
+gillName =_.map(gillFamily, 'name')
+var greet = function(name) {
+    return name + " gill";
+},
+    greetings = _.map(gillName, greet);
+_.join(greetings,", ")
+
 //11
 var sortGillAge
 sortGillAge = _.sortBy(gillFamily, ['age'])
