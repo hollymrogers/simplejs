@@ -52,3 +52,7 @@ sortGillAge = _.sortBy(gillFamily, ['age'])
 //14
 var youngestGill
 youngestGill = _.minBy(gillFamily, 'age')
+
+//16
+var gillName = _.map(gillFamily, 'name')
+_.startCase(_.toLower(gillName));
