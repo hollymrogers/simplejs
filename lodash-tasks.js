@@ -34,7 +34,7 @@ _.remove(gillFamily, function(o) { return o.age >50;})
 gillUnderFiftySize = _.size(gillFamily);
 
 //8
-_.remove (gillFamily, function (o) {
+_.filter (gillFamily, function (o) {
 return o.age>50; })
 var gillName
 gillName =_.map(gillFamily, 'name')
