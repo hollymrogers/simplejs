@@ -48,4 +48,6 @@ var youngestGill = _.minBy(gillFamily, 'age')
 
 //16
 var gillName = _.map(gillFamily, 'name')
-_.startCase(_.toLower(gillName));
+var gillUpperCase = _.startCase(_.toLower(gillName));
+var gillUpperString = _.words(gillUpperCase) 
+console.log(gillUpperCase)
