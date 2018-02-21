@@ -29,9 +29,9 @@ var gillFamilySize
 gillFamilySize = _.size(gillFamily);
 
 //7
-var gillUnderFiftySize
-_.remove(gillFamily, function(o) { return o.age >50;})
-gillUnderFiftySize = _.size(gillFamily);
+var gillUnderFifty = _.filter(gillFamily, function(o) { return o.age <50;})
+var gillUnderFiftySize = _.size(gillUnderFifty);
+console.log(gillUnderFiftySize)
 
 //8
 var gillFamily = [{name: 'john', age: 20}, {name: 'richard', age: 27}, {name: 'debbie', age: 55}, {name: 'dan', age: 25}, {name: 'robin', age: 60}]
