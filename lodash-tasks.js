@@ -46,6 +46,11 @@ var sortGillAge = _.sortBy(gillFamily, ['age'])
 //14
 var youngestGill = _.minBy(gillFamily, 'age')
 
+//15
+var letter = 'a'
+var results = _.filter(gillFamily, function(item) { return item.name.indexOf(letter) > -1; });
+console.log(results)
+
 //16
 var gillName = _.map(gillFamily, 'name')
 var gillUpperCase = _.startCase(_.toLower(gillName));
