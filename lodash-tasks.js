@@ -27,16 +27,15 @@ var gillUnderFiftySize = _.size(gillUnderFifty);
 console.log(gillUnderFiftySize)
 
 //8
-var gillFamily = [{name: 'john', age: 20}, {name: 'richard', age: 27}, {name: 'debbie', age: 55}, {name: 'dan', age: 25}, {name: 'robin', age: 60}]
 _.filter (gillFamily, function (o) {
 return o.age>50; })
-var gillName
-gillName =_.map(gillFamily, 'name')
+var gillName =_.map(gillFamily, 'name')
 var greet = function(name) {
     return name + " gill";
 },
     greetings = _.map(gillName, greet);
-_.join(greetings,", ")
+var gillUnder50 = _.join(greetings,", ")
+console.log(gillUnder50)
 
 //9
 var gillFamilyTable = "<tr><th>Name</th> <th>Age</th></tr>" 
