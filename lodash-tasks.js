@@ -70,3 +70,10 @@ var gillFamilyCapitalised = _.map(gillFamily, function(familyMember) {
 	return {...familyMember, name: capitaliseName}
 })
 console.log(gillFamilyCapitalised)
+
+//17
+var letter = 'a'
+var gillFamilyA = _.filter(gillFamily, function(familyMember) {
+return familyMember.name.indexOf(letter) > -1 })
+var gillYoungestA = _.minBy(gillFamilyA, 'age') 
+	console.log(gillYoungestA)
