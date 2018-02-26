@@ -48,12 +48,19 @@ console.log(wrappedTable)
 
 //11
 var sortGillAge = _.sortBy(gillFamily, ['age'])
+console.log(sortGillAge)
 
 //12
 var gillFamilyLetterD = _.filter(gillFamily, function(familyMember) {
 var firstLetter = familyMember.name.charAt(0) 
  return firstLetter === 'd' || firstLetter === 'D'
 })
+
+//13
+var groupGillFamily = _.groupBy(gillFamily, function (familyMember) {
+	return familyMember.name.charAt(0)
+})
+console.log(groupGillFamily)
 
 //14
 var youngestGill = _.minBy(gillFamily, 'age')
