@@ -46,6 +46,16 @@ gillFamilyTable += familyMemberRow
 var wrappedTable = "<table>" + gillFamilyTable + "</table>"
 console.log(wrappedTable)
 
+//10
+var gillFamilyAge = _.map(gillFamily, function(familyMember) {
+	if (familyMember.age <26) {
+		return familyMember
+	} else  { 
+		return _.omit(familyMember, ['age'])
+	}
+})
+console.log(gillFamilyAge)
+
 //11
 var sortGillAge = _.sortBy(gillFamily, ['age'])
 console.log(sortGillAge)
@@ -67,7 +77,7 @@ var youngestGill = _.minBy(gillFamily, 'age')
 
 //15
 var letter = 'a'
-var results = _.filter(gillFamily, function(item) { return item.name.indexOf(letter) > -1; });
+var results = _.filter(gillFamily, function(item) { return item.name.includes(letter)});
 console.log(results)
 
 //16
@@ -80,6 +90,6 @@ console.log(gillFamilyCapitalised)
 //17
 var letter = 'a'
 var gillFamilyA = _.filter(gillFamily, function(familyMember) {
-return familyMember.name.indexOf(letter) > -1 })
+return familyMember.name.includes(letter)})
 var gillYoungestA = _.minBy(gillFamilyA, 'age') 
 	console.log(gillYoungestA)
