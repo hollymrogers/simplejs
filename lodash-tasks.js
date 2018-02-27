@@ -34,8 +34,13 @@ var greet = function(name) {
     return name + " gill";
 },
     greetings = _.map(gillName, greet);
+<<<<<<< HEAD
  _.join(greetings,", ")
 
+=======
+var gillUnder50 = _.join(greetings,", ")
+console.log(gillUnder50)
+>>>>>>> 60df3e1aca1a75810a830fa1c73c404aa7b7caa6
 
 //9
 var gillFamilyTable = "<tr><th>Name</th> <th>Age</th></tr>" 
@@ -47,10 +52,13 @@ var wrappedTable = "<table>" + gillFamilyTable + "</table>"
 console.log(wrappedTable)
 
 //10
+<<<<<<< HEAD
 /*var gillFamilyAge = _.filter(gillFamily, function(familyMember) {
 	var familyAge = familyMember.age
 	return {...familyMember, age: familyAge <26}
 })*/
+=======
+>>>>>>> 60df3e1aca1a75810a830fa1c73c404aa7b7caa6
 var gillFamilyAge = _.map(gillFamily, function(familyMember) {
 	if (familyMember.age <26) {
 		return familyMember
@@ -58,12 +66,29 @@ var gillFamilyAge = _.map(gillFamily, function(familyMember) {
 		return _.omit(familyMember, ['age'])
 	}
 })
+<<<<<<< HEAD
 console.log("Question 10")
 console.log(gillFamilyAge)
 
+=======
+console.log(gillFamilyAge)
+>>>>>>> 60df3e1aca1a75810a830fa1c73c404aa7b7caa6
 
 //11
 var sortGillAge = _.sortBy(gillFamily, ['age'])
+console.log(sortGillAge)
+
+//12
+var gillFamilyLetterD = _.filter(gillFamily, function(familyMember) {
+var firstLetter = familyMember.name.charAt(0) 
+ return firstLetter === 'd' || firstLetter === 'D'
+})
+
+//13
+var groupGillFamily = _.groupBy(gillFamily, function (familyMember) {
+	return familyMember.name.charAt(0)
+})
+console.log(groupGillFamily)
 
 //12
 var gillFamilyLetterD = _.filter(gillFamily, function(familyMember) {
@@ -86,9 +111,13 @@ console.log(youngestGill)
 
 //15
 var letter = 'a'
+<<<<<<< HEAD
 var results = _.filter(gillFamily, function(familyMember) { 
 	return familyMember.name.includes(letter) })
 console.log("Question 15")
+=======
+var results = _.filter(gillFamily, function(item) { return item.name.includes(letter)});
+>>>>>>> 60df3e1aca1a75810a830fa1c73c404aa7b7caa6
 console.log(results)
 
 //16
@@ -96,12 +125,19 @@ var gillFamilyCapitalised = _.map(gillFamily, function(familyMember) {
 	var capitaliseName = _.capitalize(familyMember.name)
 	return {...familyMember, name: capitaliseName}
 })
+<<<<<<< HEAD
 console.log("Question 16")
+=======
+>>>>>>> 60df3e1aca1a75810a830fa1c73c404aa7b7caa6
 console.log(gillFamilyCapitalised)
 
 //17
 var letter = 'a'
 var gillFamilyA = _.filter(gillFamily, function(familyMember) {
 return familyMember.name.includes(letter)})
+<<<<<<< HEAD
 var gillYoungestA = _.minBy(gillFamilyA, 'age')
+=======
+var gillYoungestA = _.minBy(gillFamilyA, 'age') 
+>>>>>>> 60df3e1aca1a75810a830fa1c73c404aa7b7caa6
 	console.log(gillYoungestA)
