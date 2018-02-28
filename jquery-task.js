@@ -1,6 +1,7 @@
 $(document).ready(function() {
-  $('button').on('click', function() {
-var message = $('<img src = "siamese-cat.jpg"></img>');
-	$(this).after(message);
-  })
-})
+  $('.cat').on('click', function() {
+var message = $('<img src = "british-shorthair.jpg"></img>');
+	$('.cat').after(message);
+  });
+});
+

@@ -1,1 +1,26 @@
+body, h1{
+  font-family: Helvetica;
+  font-size: 50px;
+}
 
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+ button{
+ 	font-size: 30px;
+ 	border-radius: 30px;
+ 	padding: 10px;
+ }
